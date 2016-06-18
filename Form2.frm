@@ -79,31 +79,31 @@ Private Sub sabtcommand_Click()
   Set acc = New accounts
   
   
-    If Trim(txtcode.Text) = "" Then
+    If Trim(Txtcode.Text) = "" Then
      MsgBox "›Ì·œ ‘„«—Â Å— ‘Êœ"
     Exit Sub
     
-    If Len(txtcode.Text) > 5 Then
+    If Len(Txtcode.Text) > 5 Then
      MsgBox "ò«—«ò —Â«Ì „ÊÃÊœ œ«Œ· ›Ì·œ ‘„«—Â »Ì‘ «“ Õœ „Ã«“ „Ì »«‘œ"
      Exit Sub
      
      End If
      
     End If
-    If Trim(txtname.Text) = "" Then
+    If Trim(Txtname.Text) = "" Then
      MsgBox "›Ì·œ Ê÷⁄Ì  Å— ‘Êœ"
      Exit Sub
-    If Len(txtname.Text) > 30 Then
+    If Len(Txtname.Text) > 30 Then
      MsgBox "ò«—«ò —Â«Ì „ÊÃÊœ œ«Œ· ›Ì·œ Ê÷⁄Ì  »Ì‘ «“ Õœ „Ã«“ „Ì »«‘œ"
      Exit Sub
     End If
     
     End If
     
-    If bln Or stroldcode <> txtcode.Text Then
+    If bln Or stroldcode <> Txtcode.Text Then
     
-       If acc.readtextbox(txtcode.Text, "") Then
-            txtcode.Text = stroldcode
+       If acc.readtextbox(Txtcode.Text, "") Then
+            Txtcode.Text = stroldcode
             MsgBox " òœÊ«—œ ‘œÂ „—»Êÿ »Â ›Ì·œ ‘„«—Â  ò—«—Ì „Ì »«‘œ "
             Exit Sub
         End If
@@ -111,10 +111,10 @@ Private Sub sabtcommand_Click()
          
     If bln Then
     
-        acc.getInsert txtcode.Text, txtname.Text
+        acc.getInsert Txtcode.Text, Txtname.Text
         
      Else
-        acc.getUpdate txtcode.Text, txtname.Text, stroldcode
+        acc.getUpdate Txtcode.Text, Txtname.Text, stroldcode
         
             
     End If
@@ -127,8 +127,8 @@ End Sub
 
 Public Sub loadForm(strcode As String, strname As String)
     Load Me
-    txtcode.Text = strcode
-    txtname.Text = strname
+    Txtcode.Text = strcode
+    Txtname.Text = strname
     bln = False
     stroldcode = strcode
     Me.Show vbModal

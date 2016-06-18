@@ -2,13 +2,12 @@ VERSION 5.00
 Begin VB.Form Form3 
    Caption         =   "Form3"
    ClientHeight    =   3195
-   ClientLeft      =   60
-   ClientTop       =   345
+   ClientLeft      =   7005
+   ClientTop       =   2985
    ClientWidth     =   4680
    LinkTopic       =   "Form3"
    ScaleHeight     =   3195
    ScaleWidth      =   4680
-   StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command4 
       Caption         =   "previously"
       Height          =   375

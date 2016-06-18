@@ -240,5 +240,5 @@ Private Sub uppdatecommand_Click()
 End Sub
 
 Private Sub VSFlexGrid1_DblClick()
-    insertcommand_Click
+    insertCommand1_Click
 End Sub
